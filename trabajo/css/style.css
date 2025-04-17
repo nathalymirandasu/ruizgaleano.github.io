@@ -1,0 +1,181 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(/img/fondo2.png);
+    font-family: "Arsenal SC", serif;
+  }
+  
+  .main {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+  }
+  
+  .maindelmain {
+    display: flex;
+    width: 90%;
+    max-width: 500px;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.09);
+    backdrop-filter: blur(5px);
+  }
+  
+  .descripcionylogo {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
+    flex-direction: column;
+    position: relative;
+    padding: 10px 0;
+    
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+
+  }
+  
+  #LOGO {
+    height: auto;
+    width: 40%;
+    max-width: 150px;
+    position: relative;
+  }
+  
+  .descripcionylogo p {
+    font-size: 160%;
+    text-shadow: 3px 3px 3px black;
+    color: white;
+    text-align: center;
+    margin: 15px 0;
+  }  
+  
+  /* .logosderedes {
+    width: 70%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+  } */
+  
+  .botones {
+    padding: 2%;
+    padding-top: 1%;
+    align-items: center;
+    width: 85%;
+    max-width: 400px;
+    height: auto;
+    overflow-y: auto;
+  }
+  
+  .botonespordentro {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 15px;
+    border-radius: 15px;
+    position: relative;
+    background-color: rgba(208, 42, 42, 0.715);
+    height: 50px;
+    transition: all 0.3s ease;
+  }
+  
+  .botonespordentro:hover {
+    background-color: #f5111179;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  a {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+  }
+  
+  .botonletra {
+    display: flex;
+    margin-left: 5%;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .botonletra p {
+    font-size: 100%;
+    color: white;
+    font-weight: bold;
+    text-shadow: 3px 3px 3px black;
+    margin: 0;
+  }
+  
+  .botonimagen {
+    display: flex;
+    height: 100%;
+    margin-left: 5%;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+  }
+  
+  /* .botonimagen img {  
+    width: 30px;
+    height: auto;
+  }*/
+  
+  /* Media queries para responsividad */
+  @media (min-width: 768px) {
+    .maindelmain {
+      width: 50%;
+    }
+  
+    .botones {
+      width: 75%;
+    }
+  
+    .botonespordentro {
+      height: 60px;
+    }
+  
+    .botonimagen {
+      width: 50px;
+    }
+  
+    .botonimagen img {
+      width: 30px;
+    }
+  
+    .botonletra p {
+      font-size: 120%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .descripcionylogo p {
+      font-size: 120%;
+    }
+  
+    .botonespordentro {
+      height: 45px;
+    }
+  
+    .botonimagen {
+      width: 35px;
+    }
+  
+    .botonimagen img {
+      width: 20px;
+    }
+  }
+  
